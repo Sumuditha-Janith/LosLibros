@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ancLoginPage" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #E4E0E1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.loslibros.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" layoutX="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/login.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="720.0" prefWidth="356.0" style="-fx-background-color: #F8F4E1;">
+         <children>
+            <Pane layoutX="21.0" layoutY="168.0" prefHeight="318.0" prefWidth="315.0">
+               <children>
+                  <Text fill="#543310" layoutX="31.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Los Libros" textAlignment="CENTER">
+                     <font>
+                        <Font name="Algerian" size="48.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtUsername" layoutX="46.0" layoutY="86.0" prefHeight="40.0" prefWidth="222.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #74512D; -fx-border-width: 0 0 1px 0;">
+                     <font>
+                        <Font name="Calibri" size="20.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="81.0" layoutY="223.0" mnemonicParsing="false" onAction="#signInOnAction" prefHeight="40.0" prefWidth="152.0" style="-fx-background-color: #543310; -fx-background-radius: 16;" text="Sign In" textFill="#f8f4e1">
+                     <font>
+                        <Font name="Calibri Bold" size="21.0" />
+                     </font>
+                  </Button>
+                  <PasswordField fx:id="pwdPassword" layoutX="46.0" layoutY="152.0" prefHeight="40.0" prefWidth="222.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #74512D; -fx-border-width: 0 0 1px 0;">
+                     <font>
+                        <Font name="Calibri" size="20.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

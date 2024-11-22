@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.loslibros.controller.CustomerFormController">
+   <children>
+      <Text layoutX="376.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Customer">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableCustomer" layoutX="70.0" layoutY="289.0" onMouseClicked="#onClickCusTable" prefHeight="425.0" prefWidth="840.0" style="-fx-border-color: #74512D; -fx-border-radius: 3;">
+         <columns>
+            <TableColumn fx:id="colCusId" maxWidth="210.0" minWidth="80.0" prefWidth="90.0" text="ID" />
+            <TableColumn fx:id="colCusName" maxWidth="3000.0" minWidth="100.0" prefWidth="300.0" text="Name" />
+            <TableColumn fx:id="colCusAddress" maxWidth="3000.0" minWidth="100.0" prefWidth="350.0" text="Address" />
+            <TableColumn fx:id="colCusNum" maxWidth="250.0" minWidth="80.0" prefWidth="100.0" text="Mobile No." />
+         </columns>
+      </TableView>
+      <HBox alignment="CENTER_LEFT" layoutX="70.0" layoutY="77.0" prefHeight="38.0" prefWidth="840.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="135.0" text="Customer Id">
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCustomerId" text="1">
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="70.0" layoutY="116.0" prefHeight="38.0" prefWidth="840.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="135.0" text="Name">
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCusName" prefHeight="26.0" prefWidth="705.0" style="-fx-background-color: transparent; -fx-border-color: #74512D; -fx-border-width: 0 0 1px 0;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="70.0" layoutY="155.0" prefHeight="38.0" prefWidth="840.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="135.0" text="Address">
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCusAddress" prefHeight="26.0" prefWidth="705.0" style="-fx-background-color: transparent; -fx-border-color: #74512D; -fx-border-width: 0 0 1px 0;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="70.0" layoutY="193.0" prefHeight="38.0" prefWidth="840.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="135.0" text="Phone">
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCusNum" prefHeight="26.0" prefWidth="505.0" style="-fx-background-color: transparent; -fx-border-color: #74512D; -fx-border-width: 0 0 1px 0;" />
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" layoutX="90.0" layoutY="240.0" prefHeight="35.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="btnCusSave" mnemonicParsing="false" onAction="#btnCusSaveOnAction" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 8; -fx-background-color: #ae805e;" text="Save" textFill="#f8f4e1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnCusUpdate" mnemonicParsing="false" onAction="#btnCusUpdateOnAction" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 8; -fx-background-color: #ae805e;" text="Update" textFill="#f8f4e1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnCusDelete" mnemonicParsing="false" onAction="#btnCusDeleteOnAction" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 8; -fx-background-color: #ae805e;" text="Delete" textFill="#f8f4e1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnCusResetOnAction" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 8; -fx-background-color: #ae805e;" text="Reset" textFill="#f8f4e1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnCusGenReportOnAction" prefHeight="31.0" prefWidth="197.0" style="-fx-background-radius: 8; -fx-background-color: #ae805e;" text="Generate Report" textFill="#f8f4e1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
