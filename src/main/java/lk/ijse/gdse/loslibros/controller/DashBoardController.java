@@ -90,6 +90,20 @@ public class DashBoardController {
         navigateTo("/view/EmployeePayrollForm.fxml");
     }
 
+    @FXML
+    void signOutOnAction(ActionEvent event) {
+        try {
+            loggedInUser = null;
+
+            AnchorPane loginPage = FXMLLoader.load(getClass().getResource("/view/LoginForm.fxml"));
+
+            nextPage.getScene().setRoot(loginPage);
+        } catch (IOException e) {
+            e.printStackTrace();
+            new Alert(Alert.AlertType.ERROR, "Failed to load login page!").show();
+        }
+    }
+
 
     public void navigateTo(String fxmlPath) {
         try {
