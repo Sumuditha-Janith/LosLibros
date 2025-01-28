@@ -23,7 +23,7 @@
         <columns>
           <TableColumn fx:id="colPayId" maxWidth="360.0" prefWidth="120.0" text="Payroll Id" />
             <TableColumn fx:id="colPtEmpId" maxWidth="360.0" prefWidth="120.0" text="Employee Id" />
-            <TableColumn fx:id="colPayDate" maxWidth="360.0" prefWidth="120.0" text="Payroll Date" />
+            <TableColumn fx:id="colPayDate" maxWidth="360.0" prefWidth="120.0" text="Last Updated" />
             <TableColumn fx:id="colBasicSalary" maxWidth="360.0" prefWidth="120.0" text="Basic Salary" />
             <TableColumn fx:id="colDeductions" maxWidth="360.0" prefWidth="120.0" text="Deductions" />
             <TableColumn fx:id="coldBonuses" maxWidth="360.0" prefWidth="120.0" text="Bonus" />

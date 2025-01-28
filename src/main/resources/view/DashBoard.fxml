@@ -108,9 +108,9 @@
                      </VBox.margin></Button>
                </children>
             </VBox>
-            <Button layoutX="75.0" layoutY="655.0" mnemonicParsing="false" onAction="#signOutOnAction" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #F8ECD1; -fx-background-radius: 18;" text="Sign Out" textAlignment="CENTER" textFill="#493628">
+            <Button layoutX="75.0" layoutY="655.0" mnemonicParsing="false" onAction="#signOutOnAction" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: #EACEB4; -fx-background-radius: 18;" text="Sign Out" textAlignment="CENTER" textFill="#000000d9">
                <font>
-                  <Font name="Calibri Bold" size="15.0" />
+                  <Font name="Calibri Bold" size="16.0" />
                </font>
             </Button>
          </children>
